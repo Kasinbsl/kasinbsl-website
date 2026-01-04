@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TSLicenseControlFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileDate>2026-01-04T00:00:00+08:00</FileDate>
+  <TS_License_Set>
+    <TSLicense>
+      <Client_Number>TS_2025_01</Client_Number>
+    </TSLicense>
+    <TSLicense>
+      <Client_Number>TS_2025_02</Client_Number>
+    </TSLicense>
+  </TS_License_Set>
+</TSLicenseControlFile>

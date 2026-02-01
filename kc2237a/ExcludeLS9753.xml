@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TSLicenseSerialsExclusionList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileDate>2026-02-01T00:00:00+08:00</FileDate>
+  <LicenseSerial_Exclusion_List>
+    <string>one123</string>
+    <string>two456</string>
+    <string>three789</string>
+  </LicenseSerial_Exclusion_List>
+</TSLicenseSerialsExclusionList>

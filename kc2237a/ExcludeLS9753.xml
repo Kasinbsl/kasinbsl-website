@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TSLicenseSerialsExclusionListFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <FileDate>2026-02-02T00:00:00+08:00</FileDate>
-  <LicenseSerial_Exclusion_List>
-    <string>TSNL-B2RC-GQ9R-ECGM</string>
-  </LicenseSerial_Exclusion_List>
+  <LicenseSerial_Exclusion_List />
 </TSLicenseSerialsExclusionListFile>

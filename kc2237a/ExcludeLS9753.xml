@@ -2,8 +2,6 @@
 <TSLicenseSerialsExclusionListFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <FileDate>2026-02-02T00:00:00+08:00</FileDate>
   <LicenseSerial_Exclusion_List>
-    <string>Apple</string>
-    <string>Orange</string>
-    <string>Banana</string>
+    <string>TSNL-B2RC-GQ9R-ECGM</string>
   </LicenseSerial_Exclusion_List>
 </TSLicenseSerialsExclusionListFile>

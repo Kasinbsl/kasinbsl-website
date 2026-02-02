@@ -1,0 +1,1879 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="TurboSecretary version history, company secretarial software updates, version changelog, software updates, release notes"
+    />
+    <meta
+      name="description"
+      content="TurboSecretary Version Log - Complete history of updates, features, and enhancements for our company secretarial software."
+    />
+    <title>TurboSecretary Version Log - Kasin Business Solutions Limited</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f5f7fa;
+        color: #333;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1a3a5f, #2c5f8a);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+        position: relative;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin: 2rem 0 1rem;
+        color: #1a3a5f;
+        border-bottom: 2px solid #2c5f8a;
+        padding-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0 0.5rem;
+        color: #2c5f8a;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+
+      section {
+        background: white;
+        padding: 2rem;
+        margin: 2rem 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Navigation Styles */
+      .main-nav {
+        background: #1a3a5f;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        padding: 0;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        display: block;
+        font-weight: 500;
+        transition: background 0.3s;
+      }
+
+      .nav-links a:hover {
+        background: #2c5f8a;
+      }
+
+      .version-header {
+        background: #f0f7ff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        border-left: 4px solid #2c5f8a;
+      }
+
+      .version-note {
+        background: #fff8e1;
+        padding: 1rem;
+        border-radius: 6px;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+        border-left: 3px solid #ffc107;
+      }
+
+      /* Version Entry Styles */
+      .version-entry {
+        background: #f8f9fa;
+        margin: 1.5rem 0;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 4px solid #2c5f8a;
+        transition: transform 0.2s;
+      }
+
+      .version-entry:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .version-number {
+        color: #1a3a5f;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .release-date {
+        color: #666;
+        font-weight: normal;
+        font-size: 1rem;
+      }
+
+      .change-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .change-list li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eaeaea;
+        position: relative;
+        padding-left: 1.5rem;
+      }
+
+      .change-list li:before {
+        content: "•";
+        color: #2c5f8a;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+      }
+
+      .change-list ul {
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+        list-style-type: circle;
+      }
+
+      .download-link {
+        display: inline-block;
+        background: #2c5f8a;
+        color: white;
+        padding: 0.4rem 0.8rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        margin-left: 1rem;
+        transition: background 0.3s;
+      }
+
+      .download-link:hover {
+        background: #1a3a5f;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin: 1rem 0 2rem 0;
+        color: #2c5f8a;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .back-link:hover {
+        color: #1a3a5f;
+        text-decoration: underline;
+      }
+
+      footer {
+        background: #1a3a5f;
+        color: white;
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        section {
+          padding: 1.5rem;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .nav-links a {
+          padding: 0.8rem 1rem;
+        }
+
+        .version-number {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .download-link {
+          margin-left: 0;
+          margin-top: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Kasin Business Solutions Limited</h1>
+        <p class="tagline">TurboSecretary Version History</p>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#product">TurboSecretary</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#details">Product Details</a></li>
+          <li><a href="versionlog.html">Version Log</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <a href="index.html#details" class="back-link"
+        >← Back to TurboSecretary Details</a
+      >
+
+      <section class="version-header">
+        <h2>TurboSecretary Version History</h2>
+        <p>
+          Complete changelog of all updates, enhancements, and bug fixes for
+          TurboSecretary company secretarial software.
+        </p>
+        <div class="version-note">
+          <strong>Note:</strong> This log covers changes from Version 2.1.0.0
+          (sv003) onwards. For earlier versions, please contact support.
+        </div>
+      </section>
+
+      <section id="version-log">
+        <!-- Version 2.2.3.8 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.3.8</span>
+            <span class="release-date">Released: February 2, 2026</span>
+          </div>
+          <ol class="change-list">
+            <li>Update IRD address in templates of letters to IRD</li>
+            <li>Add list printing function in the task explorer</li>
+            <li>Update NAR1 to version: Specification No. 2/2025 (May 2025)</li>
+            <li>Fix the signer name inconsistency issue in NNC1</li>
+            <li>Fix the problem arising from unicode code page</li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.3.7 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.3.7</span>
+            <span class="release-date">Released: February 17, 2025</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Remove outdated routine checkings during application start-up
+            </li>
+            <li>
+              Update director/secretary resignation letter,
+              acceptance-to-act-as-secretary letter, special resolution for
+              change of company name for HK companies in accordance with the UBI
+              (Unique Business Identifier) requirement
+            </li>
+            <li>Job Monitors and related functions are discontinued</li>
+            <li>
+              Fix Annual Return List (Local HK companies) / Annual Return List
+              (Part 16 companies) to handle incorporation/registration date of
+              29 Feb
+            </li>
+            <li>
+              Amend annual return, AGM minutes to support companies with
+              incorporation date of 29 February
+            </li>
+            <li>
+              Amend wizards of setting up existing companies to support
+              companies with incorporation date of 29 February
+            </li>
+            <li>Update IRD Form i.r.1263 to version 12/2023</li>
+            <li>
+              Fix bug in showing director/secretary details that occur during
+              the formation of companies via using shelf companies
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.3.6 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.3.6</span>
+            <span class="release-date">Released: May 15, 2024</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Problem fixed: Business registration number not shown in page 5 or
+              6 when the pages are not applicable.
+            </li>
+            <li>
+              In NAR1, format shareholding numbers so that unwanted decimal is
+              not shown.
+            </li>
+            <li>
+              Add business registration number to reports of annual return
+              lists.
+            </li>
+            <li>
+              Add business registration number to report of address role query.
+            </li>
+            <li>Speed up the login process.</li>
+            <li>
+              In the custom made Hong Kong company wizard, expand the business
+              nature field.
+            </li>
+            <li>
+              Problem fixed: printing of fact sheet of custom made Hong Kong
+              company crashed when no email or phone number is provided.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.3.5 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.3.5</span>
+            <span class="release-date">Released: January 21, 2024</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Per the implementation of Phase 2 of Unique Business Identifier:
+              following CR forms have been updated to specification no. 1/2023:
+              NR2, ND5, ND8, ND7, NDR1, NN2, NN8, NN8C, NNC2, NN3, NN6, NN7,
+              NN10, NN13
+            </li>
+            <li>Fix the Chinese address bug in the Address Editor</li>
+            <li>Add address change log</li>
+            <li>Enhance info error handling for all CR Forms</li>
+            <li>Expand field width for TCSP licence exemption reasons</li>
+            <li>Incorporate UBI requirements into statutory registers</li>
+            <li>
+              Incorporate UBI requirements into the incorporation (shelf
+              company) wizard of Hong Kong companies
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.3.4 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.3.4</span>
+            <span class="release-date">Released: December 27, 2023</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Per the implementation of Phase 2 of Unique Business Identifier:
+              following CR forms have been updated to specification no. 1/2023:
+              NAR1, ND2A, ND2B, ND4, NN1, NN9, NNC1, NNC1G, NNC3, NR1, NSC1
+            </li>
+            <li>Address editor is enhanced to support CR's address format</li>
+            <li>
+              TCSP licence information is added to profiles of limited companies
+              and natural person
+            </li>
+            <li>
+              Business nature information is added to profiles of limited
+              companies
+            </li>
+            <li>
+              Incorporate UBI requirements into the incorporation (custom made)
+              wizard of Hong Kong companies
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.3.3 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.3.3</span>
+            <span class="release-date">Released: August 3, 2023</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Companies Registry has another update of AOA (sample A). Many
+              clauses in the new AOA allow for virtual meeting. The new AOA pdf
+              files can be found at:
+              <a
+                href="https://www.cr.gov.hk/en/companies_ordinance/docs/AA_Sample_A.pdf"
+                target="_blank"
+                style="color: #2c5f8a"
+                >new version (English)</a
+              >
+              |
+              <a
+                href="https://www.cr.gov.hk/sc/companies_ordinance/docs/ZAA_Sample_A.pdf"
+                target="_blank"
+                style="color: #2c5f8a"
+                >new version (Chinese)</a
+              >
+            </li>
+            <li>Fix IRD Form Issues: deprecated contents are still printed.</li>
+            <li>Fix issue of HK ID input</li>
+            <li>
+              Fix issue of messed-up Chinese text of additional matters in SCR.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.3.2 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.3.2</span>
+            <span class="release-date">Released: May 24, 2023</span>
+          </div>
+          <ol class="change-list">
+            <li>Update all IRD forms to latest version</li>
+            <li>
+              Use the updated version of AOA (sample A) of Companies Registry.
+              The changes are in Article 60 and Article 74(3)
+            </li>
+            <li>Support share holdings and share series of over 10 digits</li>
+            <li>Fix overflow problem of ND2B-PI page</li>
+            <li>
+              Prevent effective date conflict in change of registered office
+              address or change of location of registers tasks.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.3.1 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.3.1</span>
+            <span class="release-date">Released: October 17, 2022</span>
+          </div>
+          <ol class="change-list">
+            <li>Enhanced to support 17 revised CR forms</li>
+            <li>Updated form IR1263 to: Specification No. 8/2020</li>
+            <li>Updated form IRBR2 to: Specification No. 10/2013</li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.3.0 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.3.0</span>
+            <span class="release-date">Released: September 20, 2021</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Allow users to opt out the printing of share series in (1)
+              register of member (2) register of transfer (3) register of share
+              certificates (4) share certificate
+            </li>
+            <li>
+              Support phase 1 of the new inspection regime of the Companies
+              Register under the Companies Ordinance (Cap. 622). For more
+              information regarding the new inspection regime,
+              <a
+                href="https://www.cr.gov.hk/en/publications/docs/ec1-2021-e.pdf"
+                target="_blank"
+                style="color: #2c5f8a"
+                >click here</a
+              >.
+            </li>
+            <li>
+              Enhance printing status dialog for printing of certain documents
+            </li>
+            <li>
+              Add printing date on the left side of the footer of statutory
+              registers
+            </li>
+            <li>
+              In IRC3111A, use full name to print in Company Name / Business
+              Name / Branch Name
+            </li>
+            <li>
+              In the address post viewer, a new service address category is
+              added
+            </li>
+            <li>
+              Bug fix - NDR1 does not print non-HK Id when the applicant (either
+              director or member) uses that as identity document
+            </li>
+            <li>
+              Bug fix - Crash in the printing of register of significant
+              controller or director confirmation on significant controller
+              information when register of significant controller has not been
+              set up or when using certain version of excel
+            </li>
+            <li>
+              Bug fix - The share certificate setter crashes when saving changes
+              if the share class prefix is cleared
+            </li>
+            <li>
+              Bug fix - Cannot remove a company when it appears in other
+              companies' reversed events
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.2.9 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.2.9</span>
+            <span class="release-date">Released: July 16, 2019</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              In the document set for appointment/removal of regular/alternate
+              directors, change wordings of "Special Resolution" to "Ordinary
+              Resolution".
+            </li>
+            <li>
+              In "Bought and Sold Note", use different template when share price
+              is in total consideration mode.
+            </li>
+            <li>
+              In First Director Minutes of a tailor made Hong Kong limited by
+              shares company, modify the paragraph of "FOUNDER MEMBERS'
+              SUBSCRIBED SHARES" so that founder members' share capital are
+              broken down into 3 parts: Paid, Unpaid, Total
+            </li>
+            <li>
+              One-off tasks that were not completed successfully due to data
+              access problem can now be removed.
+            </li>
+            <li>
+              For Hong Kong limited by shares company, supports a new task of
+              "paying up unpaid share capital".
+            </li>
+            <li>
+              The English AOA (the Sample-A version of Companies Registry) is
+              updated in the first page (the CI copy page) due to the change of
+              wordings in new Certificate of Incorporation issued by Companies
+              Registry.
+            </li>
+            <li>
+              Bug Fix - Printing of very small decimal number incorrectly.
+            </li>
+            <li>
+              Bug Fix - total share capital in Chinese AOA (for Hong Kong
+              limited by shares company) was displayed as : e.g. 港元50 instead
+              of 50 港元
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.2.8 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.2.8</span>
+            <span class="release-date">Released: May 26, 2019</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Add filters on TCSP reports. User can now choose between including
+              client label or excluding client label
+            </li>
+            <li>
+              Add a people report. User can now select a set of people from the
+              entity list to print their names and identification document
+              number.
+            </li>
+            <li>
+              Bug Fix: Annual Return (NAR1) may mess up in the printing of
+              member holding information in Schedule 1 when a member's
+              information spans across more than one page.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.2.7 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.2.7</span>
+            <span class="release-date">Released: April 29, 2019</span>
+          </div>
+          <ol class="change-list">
+            <li>Add preventive measures against unexpected network issues.</li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.2.6 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.2.6</span>
+            <span class="release-date">Released: April 16, 2019</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              In the dialog of Designated Representative setup, prevent user
+              from entering non-HongKong address as all designated
+              representatives are required to have Hong Kong address.
+            </li>
+            <li>
+              In the dialog of Designated Representative setup, allow user to
+              edit the extended profile of the currently selected entity.
+            </li>
+            <li>
+              The dialog of Designated Representative setup can now pull in
+              information of phone, fax and address from an entity's extended
+              profile.
+            </li>
+            <li>
+              The information of company number and place of incorporation are
+              added to registers of member, director, secretary, charge, share
+              transfer and share certificate.
+            </li>
+            <li>
+              In the wizard of Share Certificate Register, add the support of
+              share certificate number swapping.
+            </li>
+            <li>
+              Add search function in Single Label Selector and Multiple Label
+              Selector.
+            </li>
+            <li>Expand the limit of client group.</li>
+            <li>
+              Add a submenu of Client Labels under the menu of Clients for
+              users' easy access to the maintenance dialog of Client Labels.
+            </li>
+            <li>
+              Under the TCSP menu, add a report of TCSP specific information for
+              selected set of companies.
+            </li>
+            <li>
+              In the list of companies with TurboSecretary support, the list of
+              address usage and the list of posts held by an entity, add support
+              for users to add selected set of companies to a label.
+            </li>
+            <li>
+              In the setup of an existing company, add measures to restore its
+              states when any of the setup procedures encounter data access
+              problem.
+            </li>
+            <li>
+              For foreign companies, allow the skipping of setup of Capital and
+              Member. The NN3 of foreign companies registered under Part XVI of
+              Companies Ordinance (Cap. 622) who skip the setup of Capital and
+              Member will show NIL in all boxes of the Share Capital section in
+              page 7.
+            </li>
+            <li>
+              Bug Fix: the static member information was not generated for
+              limited by guarantee companies.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.2.5 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.2.5</span>
+            <span class="release-date">Released: February 2, 2019</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Add a Client Origin Distribution Report as a support to TCSP
+              compliance.
+            </li>
+            <li>
+              Update NR2 form to the version of specification 1/2019 which will
+              be put into use with effect from the commencement of operation of
+              the Companies (Amendment) (No. 2) Ordinance 2018 on 1 February
+              2019.
+            </li>
+            <li>
+              Add printing of static organization structure information as of a
+              date.
+            </li>
+            <li>
+              Bug Fix: Address merge failed when merging 2 addresses would cause
+              conflict.
+            </li>
+            <li>Bug Fix: TurboSecretary asked to close itself unexpectedly.</li>
+            <li>
+              Bug Fix: Printing NDR1 would crash when correspondence address of
+              applicant was not set.
+            </li>
+            <li>
+              Bug Fix: The English version of Bought and Sold note has wording
+              mistake.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.2.4 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.2.4</span>
+            <span class="release-date">Released: January 7, 2019</span>
+          </div>
+          <ol class="change-list">
+            <li>Implement a Client Relationship Management (CRM) module</li>
+            <li>Implement new authorization mechanism</li>
+            <li>
+              For a natural person, the only non-HK Id supported previously was
+              PRC ID. In this version, non-HK Id support is extended to all
+              countries
+            </li>
+            <li>
+              Add additional clause to the share transfer declaration to IRD
+            </li>
+            <li>
+              Add a selection to the AGM agenda regarding Auditors: "No
+              Appointment of Auditor"
+            </li>
+            <li>
+              Expand the field size of signer and secondary contact in the memo
+              sender profile
+            </li>
+            <li>
+              Update the paragraph of "LOCATION OF BOOKS, RECORDS AND UNDERLYING
+              DOCUMENTATION" in the first director minutes of BVI Shelf company
+            </li>
+            <li>
+              Add a "Black List" to exclude unwanted company from showing up in
+              Annual Return List
+            </li>
+            <li>Add "Exclusion List" to TurboSecretary Company List</li>
+            <li>
+              Add "Privileged Client List" to control what companies a user can
+              or cannot see.
+            </li>
+            <li>
+              Bug fix: program crashes when printing certificates for
+              jurisdictions other than Hong Kong, BVI and Cayman
+            </li>
+            <li>
+              Bug fix: the annual return list showing dates (incorp date,
+              anniversary date, due date) with mixed format (ie d/M/yyyy or
+              M/d/yyyy)
+            </li>
+            <li>
+              Bug fix: 審計司 was amended to 審計師 in generated documents such
+              as Annual General Meeting minutes
+            </li>
+            <li>
+              Bug fix: SCR registers crashes when loading some data of old
+              format.
+            </li>
+            <li>
+              Bug fix: Printing Chinese AOA with custom template, the total
+              share capital is printed as: eg 港元 2 instead of 2 港元
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.2.3 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.2.3</span>
+            <span class="release-date">Released: September 2, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>Update the IRD Form "IRC3111A" to version (10/2017).</li>
+            <li>
+              Add information of # of share and the share class name of shares
+              being transferred in the declaration letter to IRD for share
+              transfer.
+            </li>
+            <li>
+              Bug Fix: some share transfer documents do not have share class
+              name translated properly during printing Chinese versions.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.2.2 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.2.2</span>
+            <span class="release-date">Released: August 7, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              In printing NAR1, the related document wizard now allows a maximum
+              100 characters of input for charge amount or charge description.
+            </li>
+            <li>
+              In the NAR1 document wizard, highlight the warning message about
+              compliance of company secretary correspondence address requirement
+            </li>
+            <li>
+              Add support to company emails
+              <ul>
+                <li>
+                  General email (for Hong Kong companies, this email will be
+                  reported in NAR1)
+                </li>
+                <li>
+                  Email for contact in the business place of Hong Kong (for
+                  foreign companies registered in Hong Kong, this email will be
+                  reported in NN3)
+                </li>
+                <li>
+                  Email for contact in the place of incorporation (for foreign
+                  companies registered in Hong Kong, this email will be reported
+                  in NN3)
+                </li>
+              </ul>
+            </li>
+            <li>
+              Bug Fix: In the Chinese version of the confirmation letter to
+              Significant Controller, Hong Kong identity number was stated as
+              "身份證號碼"; now changed to "香港身份證號碼"
+            </li>
+            <li>
+              Bug Fix: Special Resolution for appointment of directors,
+              resolution passing date was printed as 01 January, 0001 when the
+              date is unknown; now changed to a blank string
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.2.1 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.2.1</span>
+            <span class="release-date">Released: July 2, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Add a global setting for user to define default register types
+            </li>
+            <li>
+              For custom incorporation of Hong Kong limited by shares company,
+              user can now choose self-defined templates when printing AOA
+            </li>
+            <li>Add an adhoc printing for address records</li>
+            <li>
+              Now support printing of email address in page 2 (Box 7) of NAR1
+            </li>
+            <li>
+              Now support company secretary with prc id as identification and
+              has the information printed in NNC1, NNC1G and NAR1
+            </li>
+            <li>
+              When printing address in CR form, the country part will be
+              excluded as it will be reported separately in a country/region box
+            </li>
+            <li>Allow update of company number in company profile</li>
+            <li>
+              Bug fixed: When printing address in CR form, some addresses are
+              wrapped in one line, not being splitted properly.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.2.0 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.2.0</span>
+            <span class="release-date">Released: May 29, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Add 2 legal form types, respectively "listed company" and "limited
+              partnership", for Significant Controllers who are corporates.
+            </li>
+            <li>
+              Add 3 more nature of controls for Significant Controllers
+              <ul>
+                <li>
+                  The person holds, directly and indirectly, more than 25% of
+                  the issued shares in the company
+                </li>
+                <li>
+                  The person holds, directly, more than 25% of the issued shares
+                  in the company
+                </li>
+                <li>
+                  The person holds, indirectly, more than 25% of the issued
+                  shares in the company
+                </li>
+              </ul>
+            </li>
+            <li>Add minutes and CR form for reporting the location of SCR</li>
+            <li>
+              Allow company to define what registers are applicable to the
+              company
+            </li>
+            <li>
+              Add a global setting for user to choose printing address in
+              capital letter
+            </li>
+            <li>Allow full-edit of country information</li>
+            <li>Add printing of ad-hoc share subscription application</li>
+            <li>Add a user setting for enabling or disabling "Job Monitor"</li>
+            <li>
+              Bug Fix: prc id was not printed out in the SC confirmation notice
+              for SC who uses prc id for identity
+            </li>
+            <li>
+              Bug Fix: the "List of companies with incomplete share registers"
+              included companies whose share registers were actually up to date
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.1.9 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.1.9</span>
+            <span class="release-date">Released: May 9, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>Discontinue the printing of obsolete documents</li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.1.8 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.1.8</span>
+            <span class="release-date">Released: April 11, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Fixed some typos in generated SCR documents such as the SCR
+              Register
+            </li>
+            <li>
+              Make SCR dialogs more responsive to change in a screen's display
+              scale
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.1.7 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.1.7</span>
+            <span class="release-date">Released: April 4, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Fixed bug: selection of SCR candidates failed when a company or if
+              available, its legal entity members, does not have any company
+              secretary.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.1.6 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.1.6</span>
+            <span class="release-date">Released: March 27, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Add support to PRCID as identification document for registrable
+              significant controller who is a person
+            </li>
+            <li>Add support of Chinese version of SCR</li>
+            <li>
+              Add the function of setting entry number of significant controller
+              and designated representative
+            </li>
+            <li>
+              Add the function of enabling / disabling printing of a significant
+              controller or designated representative record in the SCR and the
+              confirmation letter to director
+            </li>
+            <li>
+              Add the function of deleting significant controller and designated
+              representative entries
+            </li>
+            <li>
+              Fixed bug: passport number is not shown in SCR for registrable
+              significant controller (person) who use passport as identification
+              document
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.1.5 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.1.5</span>
+            <span class="release-date">Released: March 21, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Fix a bug in the Wizard of Significant Controllers Register which
+              fails to create significant controller or designated
+              representative entry if the register has never been initialized.
+            </li>
+            <li>
+              Amended the wordings in the print-out of Significant Controllers
+              Register
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.1.4 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.1.4</span>
+            <span class="release-date">Released: March 20, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Enhancements in the Wizard of Significant Controllers Register
+              <ol>
+                <li>
+                  Allow more spacing for viewing significant controllers,
+                  designated representatives and additional matters
+                </li>
+                <li>
+                  Allow editing and duplicating history entry of significant
+                  controller and designated representative
+                </li>
+                <li>
+                  Add printing of confirmation notice for designated
+                  representative
+                </li>
+                <li>
+                  Add printing of information in the Significant Controllers
+                  Register for confirmation by director of a company
+                </li>
+                <li>Add Chinese version of additional matters</li>
+                <li>
+                  Fix a bug in the selection of candidates from internal source
+                  for significant controller and designated representative,
+                  occuring for companies with limited entities as members
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.1.3 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.1.3</span>
+            <span class="release-date">Released: March 15, 2018</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Per the new requirements of Companies (Amendment) Ordinance 2018,
+              support to Significant Controller Registers (SCR) is added for
+              companies incorporated in Hong Kong. With the new support, user
+              can prepare a SCR, print the SCR and print basic confirmation
+              notice for identified significant controller. There is an added
+              Significant Controller Registers status viewer to monitor
+              companies that are required to prepare a SCR
+            </li>
+            <li>
+              As required by Companies (Amendment) Ordinance 2018, printing of
+              NR2 now adopts the version of specification 1/2018
+            </li>
+            <li>
+              Enhancements are made to the Address Post Viewer and Entity Post
+              Viewer to capture supplemented information from the SCR.
+            </li>
+            <li>
+              To avoid confusion, dates in all annual return list are now
+              printed in the format of: (eg) 22 Nov 2017
+            </li>
+            <li>
+              An option was added to include registered office address of
+              companies in printing annual return list
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.1.2 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.1.2</span>
+            <span class="release-date">Released: November 22, 2017</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              To avoid confusion, dates in all statutory registers are now
+              printed in the format of: (eg) 22 Nov 2017
+            </li>
+            <li>
+              In the setup of share transfer task, the program will ensure that
+              there is only one transfer task per transferor. And the transferor
+              can still have multiple transfer-out entries in that one task.
+            </li>
+            <li>
+              To comply with the requirement of Hong Kong Companies Registry,
+              the form NNC2 will display "Nil" or "(無)" instead of leaving it
+              blank at the name box(es) where name is empty.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.1.1 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.1.1</span>
+            <span class="release-date">Released: March 6, 2017</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              For Hong Kong and Samoa shelf-company-incorporation, in their
+              respective document wizards, add printing of Instrument of
+              Transfer; and Bought And Sold note. Reason: allow both documents
+              to be sent to client for signature when in a rush; the company
+              secretary can bring these documents together with the one from the
+              seller of the shelf company to IRD for stamp duty
+            </li>
+            <li>
+              For Samoa shelf-company-incorporation, in its document wizards,
+              add printing of Endorsement Minutes For Corporate Member due to
+              share transfer
+            </li>
+            <li>
+              For TurboSecretary-Ready companies, enable the edit of financial
+              year end's month and day fields
+            </li>
+            <li>
+              Make financial year-end Month and Day mandatory for Hong Kong
+              Limited by guarantee companies
+            </li>
+            <li>
+              Split the current annual return list into two: one for Hong Kong
+              Limited by Shares companies and another for Hong Kong Limited by
+              Guarantee companies
+            </li>
+            <li>
+              Add search of TurboSecretary-supported companies options: (1) by
+              Under Incorporation (Taylor Made); (2) by Under Incorporation
+              (Shelf); (3) by Under Setup; (4) by Fully TurboSecretary Ready
+            </li>
+            <li>
+              When choosing to remove a TurboSecretary company, automatically
+              delete the company's entries in the JobLog. From now on, user does
+              not need to purge these entries manually before removing the
+              company.
+            </li>
+            <li>
+              Several bugs originated from the identification of limited by
+              guarantee companies are fixed
+            </li>
+            <li>
+              A bug which will crash the document module for share allotment
+              task without allotment date is fixed.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.1.0 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.1.0</span>
+            <span class="release-date">Released: January 19, 2017</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Add printing of event history in the Event History By Period
+              wizard
+            </li>
+            <li>
+              Support new task - adding new share class for Hong Kong limited by
+              shares company under Cap. 622
+            </li>
+            <li>Add facility to update attached rights of share classes</li>
+            <li>
+              Add detail of Attached Rights in the Capital Tree of Organisation
+              Explorer
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.0.9 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.0.9</span>
+            <span class="release-date">Released: June 15, 2016</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Add support to "Capital Decrease" task, only available to limited
+              companies not incorporated in Hong Kong
+            </li>
+            <li>
+              Add a column "nationality" to the Country List, which is editable
+            </li>
+            <li>
+              Allow access to the Country List from the "List Maintenance" menu
+            </li>
+            <li>
+              Add support to "Becoming Dormant" task, only available to limited
+              companies incorporated in Hong Kong
+            </li>
+            <li>
+              Add support to "Ceasing To Be Dormant" task, only available to
+              limited companies incorporated in Hong Kong
+            </li>
+            <li>
+              Add option of hiding particular-change-log in the printing of
+              register of director / secretary / member
+            </li>
+            <li>
+              Add reminder to user when member or capital events are reversed,
+              telling them to review the Register of Share Certificate which may
+              have been affected
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.0.8 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.0.8</span>
+            <span class="release-date">Released: April 18, 2016</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Per the change in BVI's statutory requirement, 4 new particulars
+              are added for person shareholder, director, secretary, authorized
+              representative and registered agent. The new particulars are Date
+              of Birth, Place of Birth, Nationality and Service Address. These
+              fields are compulsory for BVI companies and optional for companies
+              of other jurisdictions.
+            </li>
+            <li>
+              Registers of Directors / Secretaries / Shareholders also
+              incorporate the new fields mentioned in item 1.
+            </li>
+            <li>
+              The minimum notice days for AGM, GM regarding ordinary resolution
+              and GM regarding special resolutions are now configurable.
+            </li>
+            <li>
+              For change of company business name, user can now set the new
+              business name to blank, ie no business name.
+            </li>
+            <li>
+              For Part 16 company, user now have the printing option for
+              IRC3111A.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.0.7 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.0.7</span>
+            <span class="release-date">Released: September 25, 2015</span>
+          </div>
+          <ol class="change-list">
+            <li>Add Voluntary / Compulsory Winding-up task</li>
+            <li>Add "Change Of Corporate Business Name" task</li>
+            <li>Add Change of Branch Name task</li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.0.6 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.0.6</span>
+            <span class="release-date">Released: August 26, 2015</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Bug Fix: The share-certificate-setter corrupts certain posted
+              member events
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.0.5 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.0.5</span>
+            <span class="release-date">Released: August 21, 2015</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              For Hong Kong companies, share allotment with zero consideration
+              will have to be confirmed.
+            </li>
+            <li>
+              Effective date of share allotment, incorporation date of Hong Kong
+              shelf and custom-made companies are checked with reference to the
+              applicable companies ordinances.
+            </li>
+            <li>
+              For backward compatibility, for Hong Kong companies, add
+              pre-Cap.622 share allotment task
+            </li>
+            <li>
+              For backward compatibility, for Hong Kong companies, add
+              pre-Cap.622 increase-of-capital task
+            </li>
+            <li>
+              For backward compatibility, for Hong Kong companies, add
+              pre-Cap.622 capital-alteration task
+            </li>
+            <li>
+              For backward compatibility, for Hong Kong companies, add
+              pre-Cap.622 add-new-share-class task
+            </li>
+            <li>
+              For backward compatibility, for Hong Kong companies, add
+              pre-Cap.622 reclassification-of-issued-shares task
+            </li>
+            <li>
+              For backward compatibility, for Hong Kong companies, add
+              pre-Cap.622 capital-structure-reclassification task
+            </li>
+            <li>
+              In Event-History-By-Category and in Event-History-By-Period, add a
+              button to show or hide reversed events
+            </li>
+            <li>
+              Provide Key Info by right-clicking a record in
+              <ul>
+                <li style="margin-top: 10px">
+                  TurboSecretary-supported-company list
+                </li>
+                <li>Entity-List (limited company)</li>
+                <li>Entity-List (unlimited company)</li>
+                <li>Entity-List (person)</li>
+              </ul>
+            </li>
+            <li>
+              Add an abnormal data finder to locate possible data that is not
+              consistent to the format required by the applicable companies
+              ordinance.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.0.4 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.0.4</span>
+            <span class="release-date">Released: July 20, 2015</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Bring back the "Reserved Address" button to the Address List
+              dialog.
+            </li>
+            <li>
+              For Hong Kong custom-made company or Hong Kong shelf company,
+              users can now decide whether to print business commencement date
+              when printing the form of IRBR200 (notice of commencement of
+              business).
+            </li>
+            <li>
+              For Hong Kong shelf company, when printing the form of IRBR 200
+              (notice of commencement of business), the system will use the
+              address in the "change of registered office" event to fill the
+              business address.
+            </li>
+            <li>
+              Add the option of printing the form of IRC3111A (change of
+              business address) in the document wizard for Hong Kong shelf
+              company.
+            </li>
+            <li>
+              In all CR forms, auto-adjust the font size of the presentor name
+              field so as to make it fit in one line.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.0.3 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.0.3</span>
+            <span class="release-date">Released: June 8, 2015</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              In setting up task to resign director / secretary, one more
+              resignation reason (removal) is added in addition to the original
+              ones (resignation, deceased)
+            </li>
+            <li>
+              In appointment or removal of regular / alternate director, a full
+              minute set is now supported, ie: Director Minutes, Notice of
+              Shareholder Meeting, Shareholder's consent to short notice, EGM
+              minutes and special resolution.
+            </li>
+            <li>
+              A company status filter is added to the Address Usage Viewer
+            </li>
+            <li>A company status filter is added to the Entity Posts Viewer</li>
+            <li>
+              In Address Usage Viewer, add an option to print pure company name
+              column only
+            </li>
+            <li>
+              Branch viewer is enhanced to produce a view of branches for a
+              specified date.
+            </li>
+            <li>
+              Support a new task: Change address of LTD Branch. Two documents
+              are supported for this task. They are Director Minutes and
+              IRC3111A respectively.
+            </li>
+            <li>The IRD Form, IRC3111A, is revised to version (08/2014).</li>
+            <li>
+              Fixed problem: In the task explorer and company task manager, the
+              control buttons in the form were not enabled / disabled properly
+              after a task is modified.
+            </li>
+            <li>
+              Fixed problem: The English Director Minutes for Closing LTD Branch
+              has wrong wordings in the resolution paragraph title. It said
+              "Opening Branch" instead of "Closing Branch"
+            </li>
+            <li>
+              Fixed problem: The Event-Explorer did not ask for confirmation
+              during posting for events with preset future effective date.
+            </li>
+            <li>
+              Fixed problem: In frm_IRC3113, the menu option of testing cell
+              properties had been left enabled. It is disabled in this version.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.0.2 -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.0.2</span>
+            <span class="release-date">Released: May 5, 2015</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Fixed problem: the share certificate setter does not evaluate
+              remaining share series and remaining share number properly in a
+              share transfer the transferor of which has holding containing
+              multi-share-series.
+            </li>
+            <li>
+              The event-linking feature in the share certificate setter is
+              disabled to prevent share series reference problem.
+            </li>
+            <li>
+              Added "Strict Search" to the list of limited company, unlimited
+              company, and person
+            </li>
+            <li>Added "Strict Search" to the list of TurboSecretary Company</li>
+            <li>Added "Strict Search" to the list of Address</li>
+            <li>
+              The "Reserved Address" button in the list of Address was removed.
+            </li>
+            <li>
+              Fixed problem: In NAR1 printing, if user choose not to print
+              document date, the system may incorrectly issue the error "The
+              document date is before the annual return's anniversary date."
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.2.0.0 (sv001) -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.2.0.0 (sv001)</span>
+            <span class="release-date">Released: April 1, 2015</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Remove the words "Hong Kong" from a Hong Kong address when it is
+              being printed in the new CR forms (ie forms for Cap.622)
+            </li>
+            <li>
+              User can now see the final address as they type when they add or
+              edit an address.
+            </li>
+            <li>
+              Change of Wordings in the chinese non-CR version of AOA
+              <ul>
+                <li>
+                  <strong>Original Article 5's wordings:</strong
+                  ><br />公司條例（第622章）附表2內的私人股份有限公司章程細則範文（樣本B）規則適用於本公司，惟本章程細則明確排除及與本章程細則所載細則不符的該等規則，則屬例外。具體上，而在不以任何方式限制前文的一般性原則下，第11、12、16、17、21、22、23、26、33、39、41、53、56、63、64及81條並不適用或應如下文所示得以修改。
+                </li>
+                <li>
+                  <strong>Updated Article 5's wordings:</strong><br />公司
+                  (章程細則範本）公告（第622H章）附表2內的私人股份有限公司章程細則範文（樣本B）規則適用於本公司，惟本章程細則明確排除及與本章程細則所載細則不符的該等規則，則屬例外。具體上，而在不以任何方式限制前文的一般性原則下，第11、12、16、17、21、22、23、26、33、39、41、53、56、63、64及81條並不適用或應如下文所示得以修改。
+                </li>
+              </ul>
+            </li>
+            <li>
+              For companies which do not have a clause in there AOA for written
+              director/member resolutions, users in the past were forced to
+              enter a dummy text to pass the printing dialog. Now users can
+              choose not to provide the clause number. Instead, they can choose
+              to print the relevant law section number in the minutes heading.
+              And new facility is also provided for entering relevant law
+              section information of various jurisdiction into the system.
+            </li>
+            <li>
+              Minutes for regular meeting used to include the word "At Noon" in
+              the heading. Now users, via a simple setting, can hide or show
+              this wording when printing minutes for regular meeting.
+            </li>
+            <li>
+              A signature section for the beneficial owner is added to the
+              document of "Declaration of Trust"
+            </li>
+            <li>
+              The NDR1 setting is now moved into the database for stable
+              persistence.
+            </li>
+            <li>
+              Add Search criteria in "Opening TurboSecretary Company" ------
+              Search Limited By Guarantee companies
+            </li>
+            <li>
+              Fix the description in a share certificate of a Hong Kong limited
+              company:<br />- to say "in accordance with Memorandum and Articles
+              of the Company" when the issue date is before 2014-3-3<br />- to
+              say "in accordance with Articles of the Company" when the issue
+              date is on and after 2014-3-3
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.1.0.0 (sv011) -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.1.0.0 (sv011)</span>
+            <span class="release-date">Release date not specified</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Fix an allotment posting problem in Hong Kong companies caused by
+              the change from having authorised share limit to no authorised
+              share limit.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.1.0.0 (sv010) -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.1.0.0 (sv010)</span>
+            <span class="release-date">Release date not specified</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Change of Wordings in the english non-CR version of AOA
+              <ul>
+                <li>
+                  <strong>Original Article 5's wordings:</strong><br />The
+                  regulations in the Model articles (Sample B) for private
+                  companies limited by shares in Schedule 2 to the Companies
+                  Ordinance (Chapter 622) shall apply to the Company save in so
+                  far as they are hereby specifically excluded or are
+                  inconsistent with the Articles herein contained. In
+                  particular, but without in any way limiting the generality of
+                  the foregoing, Articles 11, 12, 16, 17, 21, 22, 23, 26, 33,
+                  39, 41, 53, 56, 63, 64 and 81 shall not apply or are modified
+                  as hereinafter appearing.
+                </li>
+                <li>
+                  <strong>Updated Article 5's wordings:</strong><br />The
+                  regulations in the Model articles (Sample B) for private
+                  companies limited by shares in Schedule 2 of the Companies
+                  (Model Articles) Notice (Chapter 622H) shall apply to the
+                  Company save in so far as they are hereby specifically
+                  excluded or are inconsistent with the Articles herein
+                  contained. In particular, but without in any way limiting the
+                  generality of the foregoing, Articles 11, 12, 16, 17, 21, 22,
+                  23, 26, 33, 39, 41, 53, 56, 63, 64 and 81 shall not apply or
+                  are modified as hereinafter appearing.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Fix this problem:<br />In the printing of AOA after a company is
+              successfully registered, the name of the Companies Registrar was
+              not printed out.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.1.0.0 (sv009) -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.1.0.0 (sv009)</span>
+            <span class="release-date">Release date not specified</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Put NDR1 options into a shared Application Settings file (xml
+              format), allow users to use and edit default NDR1 options
+            </li>
+            <li>
+              Update the IRD form IRC3113 to version (1/2013), but this form is
+              removed from deregistration document wizard as not necessary due
+              to CR will notify IRD
+            </li>
+            <li>
+              Add task to restore a company which had been struck off. Note,
+              this is only available to BVI company.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.1.0.0 (sv008) -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.1.0.0 (sv008)</span>
+            <span class="release-date">Release date not specified</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Incorporate the new capital regime introduced by the new Companies
+              Ordinance (Cap. 622) into the calculation of capital of Hong Kong
+              companies.
+            </li>
+            <li>
+              Add "due date info" at the bottom of the first page of NAR1, next
+              to "reference"
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.1.0.0 (sv007) -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.1.0.0 (sv007)</span>
+            <span class="release-date">Release date not specified</span>
+          </div>
+          <ol class="change-list">
+            <li>Part XI renamed to Part 16</li>
+            <li>
+              Registration of Foreign Company under Part 16
+              <ul>
+                <li>
+                  Director minutes pursuant to Section 776(4) of the new CO
+                </li>
+                <li>NN1 (to replace N1)</li>
+              </ul>
+            </li>
+            <li>NN3 (to replace N3)</li>
+            <li>
+              Incorporation task of limited by guarantee companies and
+              associated documents are now pursuant to the new Companies
+              Ordinance (Cap. 622)
+            </li>
+            <li>NNC1G (to replace NC1G)</li>
+            <li>
+              For HK companies, following features were disabled:
+              <ul>
+                <li>Increase of Capital</li>
+                <li>Change of PAR value</li>
+                <li>Add a new class of share</li>
+                <li>Reclassification of Issued Shares</li>
+                <li>Reclassification of Capital Structure</li>
+              </ul>
+            </li>
+            <li>Users can now change particulars of members</li>
+            <li>Users can now change particulars of Registered Agent</li>
+          </ol>
+        </div>
+
+        <!-- Version 2.1.0.0 (sv006) -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.1.0.0 (sv006)</span>
+            <span class="release-date">Release date not specified</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Update documents for the change of name of Hong Kong companies due
+              to the new Companies Ordinance (Cap.622) (ie: NNC2 and other
+              related documents)
+            </li>
+            <li>
+              Update documents for the change of name of overseas companies
+              registered under Part 16 of the new Companies Ordinance (Cap.622)
+              (ie: NN10 and other related documents)
+            </li>
+            <li>
+              Allow multiple first directors during the registration of Hong
+              Kong shelf company
+            </li>
+          </ol>
+        </div>
+
+        <!-- Version 2.1.0.0 (sv005) -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.1.0.0 (sv005)</span>
+            <span class="release-date">Release date not specified</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Documents for deregistration of Hong Kong companies are enhanced
+              pursuant to the requirement of the new Companies Ordinance (Cap.
+              622)
+            </li>
+            <li>
+              Add task to Nominate/Cease Reserve Director pursuant to new CO
+              (Cap. 622)
+            </li>
+            <li>Add task to change particulars of reserve director</li>
+            <li>
+              Add task for appointment / resignation of authorized
+              representative
+            </li>
+            <li>Add task to change particulars of authorized representative</li>
+            <li>
+              Add task for appointment / resignation of director/secretary of
+              Part 16 companies
+            </li>
+            <li>
+              Add task for changing particulars of director/secretary of Part 16
+              companies
+            </li>
+            <li>
+              Add task for change of RO at Incorp Place / Business Place at
+              Incorp Place / Business Place at Hong Kong for Part 16 companies
+            </li>
+            <li>
+              Add task to cease Hong Kong Business Place of Part 16 companies
+            </li>
+            <li>NDR1 (to replace DR1)</li>
+            <li>IRD form IR1263 is upgraded to version (3/2014)</li>
+            <li>ND4 (to replace D4)</li>
+            <li>ND5 (to replace D5 and D6)</li>
+            <li>ND7 (to replace D7)</li>
+            <li>ND8 (to replace D8)</li>
+            <li>NN2 (to replaced of N2)</li>
+            <li>New form: NN8</li>
+            <li>New form: NN8C</li>
+            <li>New form: NN6</li>
+            <li>New form: NN7</li>
+            <li>New form: NN9</li>
+            <li>New form: NN13</li>
+          </ol>
+        </div>
+
+        <!-- Version 2.1.0.0 (sv004) -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.1.0.0 (sv004)</span>
+            <span class="release-date">Release date not specified</span>
+          </div>
+          <ol class="change-list">
+            <li>Fix the date format problem caused by platform upgrade</li>
+            <li>
+              In the share transfer dialog, remove the "Price = PAR" for Hong
+              Kong companies
+            </li>
+            <li>
+              Disable the task for post-incorporation share allotment of Shelf
+              Company
+            </li>
+            <li>
+              The registration of Hong Kong shelf company is now pursuant to the
+              new Companies Ordinance (Cap. 622)
+            </li>
+            <li>NR1 (to replace R1)</li>
+            <li>NR2 (to replace R2)</li>
+            <li>
+              Start capturing email information of director / secretary /
+              shareholder / authorized representative / registered agent.
+            </li>
+            <li>Fix the problem of showing Chinese month in English minutes</li>
+          </ol>
+        </div>
+
+        <!-- Version 2.1.0.0 (sv003) -->
+        <div class="version-entry">
+          <div class="version-number">
+            <span>Version 2.1.0.0 (sv003)</span>
+            <span class="release-date">Release date not specified</span>
+          </div>
+          <ol class="change-list">
+            <li>
+              Add warning to user during the printing of Annual Return of Hong
+              Kong companies when secretary's address is not the same as the
+              registered office address of the company
+            </li>
+            <li>Fix the problem in printing excel file under Excel 2013</li>
+            <li>
+              Capital information of Hong kong companies' share certificate is
+              changed according to the new Companies Ordinance (Cap. 622)
+            </li>
+            <li>Support NAR1 for Hong Kong limited by guarantee companies</li>
+            <li>ND2B (to replace D2B)</li>
+            <li>
+              Particular Change for Director / Secretary now supports: change of
+              previous name and alias (both and chinese)
+            </li>
+            <li>
+              In schedule 1 of NAR1, shareholder name (english & chinese) will
+              be printed regardless of the language option
+            </li>
+            <li>ND2A (to replace D2A)</li>
+          </ol>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Kasin Business Solutions Limited. All rights reserved.
+        </p>
+        <p>
+          TurboSecretary - Professional Company Secretarial Software for
+          Corporate Compliance
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

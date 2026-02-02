@@ -1,457 +1,570 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="company secretarial software, TurboSecretary, Hong Kong company secretary, corporate compliance software, statutory records management, business registration software, company formation software, corporate governance software, secretarial workflow automation, Companies Registry forms, significant controller register, multi-jurisdiction compliance">
-    <meta name="description" content="TurboSecretary - Professional company secretarial software for Hong Kong and multi-jurisdiction compliance. Streamline statutory records, automate Companies Registry forms, and manage corporate governance efficiently.">
-    <title>Kasin Business Solutions Limited - TurboSecretary Company Secretarial Software</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="company secretarial software, TurboSecretary, Hong Kong company secretary, corporate compliance software, statutory records management, business registration software, company formation software, corporate governance software, secretarial workflow automation, Companies Registry forms, significant controller register, multi-jurisdiction compliance"
+    />
+    <meta
+      name="description"
+      content="TurboSecretary - Professional company secretarial software for Hong Kong and multi-jurisdiction compliance. Streamline statutory records, automate Companies Registry forms, and manage corporate governance efficiently."
+    />
+    <title>
+      Kasin Business Solutions Limited - TurboSecretary Company Secretarial
+      Software
+    </title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Arial, sans-serif;
-        }
-        
-        body {
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #1a3a5f, #2c5f8a);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-            position: relative;
-        }
-        
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f5f7fa;
+        color: #333;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1a3a5f, #2c5f8a);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+        position: relative;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin: 2rem 0 1rem;
+        color: #1a3a5f;
+        border-bottom: 2px solid #2c5f8a;
+        padding-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0 0.5rem;
+        color: #2c5f8a;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+
+      section {
+        background: white;
+        padding: 2rem;
+        margin: 2rem 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      .contact-item {
+        flex: 1;
+        min-width: 250px;
+      }
+
+      .contact-offer {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px dashed #ccc;
+        text-align: center;
+      }
+
+      .contact-offer a {
+        color: #2c5f8a;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .contact-offer a:hover {
+        color: #1a3a5f;
+        text-decoration: underline;
+      }
+
+      .enquiry-note {
+        background: #f0f7ff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 4px solid #2c5f8a;
+        margin-top: 1.5rem;
+      }
+
+      .enquiry-note h3 {
+        color: #1a3a5f;
+        margin-top: 0;
+      }
+
+      .enquiry-note ul {
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+      }
+
+      .product-details {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .product-card {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 4px solid #2c5f8a;
+      }
+
+      .system-requirements ul,
+      .pricing ul,
+      .version-info ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+      }
+
+      .system-requirements li,
+      .pricing li,
+      .version-info li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eaeaea;
+      }
+
+      .price-tag {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #1a3a5f;
+        margin: 1rem 0;
+      }
+
+      .feature-section {
+        margin: 2rem 0;
+      }
+
+      .function-subject {
+        font-weight: bold;
+        color: #1a3a5f;
+        margin: 1.5rem 0 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      .function-detail {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .supported-tasks {
+        columns: 2;
+        margin: 1rem 0;
+      }
+
+      .supported-tasks ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+      }
+
+      .supported-tasks li {
+        padding: 0.3rem 0;
+        border-bottom: none;
+      }
+
+      footer {
+        background: #1a3a5f;
+        color: white;
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+      }
+
+      /* Navigation Styles */
+      .main-nav {
+        background: #1a3a5f;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        padding: 0;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        display: block;
+        font-weight: 500;
+        transition: background 0.3s;
+      }
+
+      .nav-links a:hover {
+        background: #2c5f8a;
+      }
+
+      .jump-to-product {
+        text-align: center;
+        margin: 1rem 0;
+      }
+
+      .jump-to-product a {
+        display: inline-block;
+        background: #2c5f8a;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.3s;
+      }
+
+      .jump-to-product a:hover {
+        background: #1a3a5f;
+      }
+
+      @media (max-width: 768px) {
         h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.5rem;
+          font-size: 2.2rem;
         }
-        
+
         h2 {
-            font-size: 2rem;
-            margin: 2rem 0 1rem;
-            color: #1a3a5f;
-            border-bottom: 2px solid #2c5f8a;
-            padding-bottom: 0.5rem;
+          font-size: 1.8rem;
         }
-        
-        h3 {
-            font-size: 1.5rem;
-            margin: 1.5rem 0 0.5rem;
-            color: #2c5f8a;
-        }
-        
-        .tagline {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
+
         section {
-            background: white;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 1.5rem;
         }
-        
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-        
-        .contact-item {
-            flex: 1;
-            min-width: 250px;
-        }
-		
-		.contact-offer {
-			margin-top: 1.5rem;
-			padding-top: 1rem;
-			border-top: 1px dashed #ccc;
-			text-align: center;
-		}
 
-		.contact-offer a {
-			color: #2c5f8a;
-			text-decoration: none;
-			font-weight: 500;
-			transition: color 0.3s;
-		}
-
-		.contact-offer a:hover {
-			color: #1a3a5f;
-			text-decoration: underline;
-		}
-        
-        .enquiry-note {
-            background: #f0f7ff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #2c5f8a;
-            margin-top: 1.5rem;
-        }
-        
-        .enquiry-note h3 {
-            color: #1a3a5f;
-            margin-top: 0;
-        }
-        
-        .enquiry-note ul {
-            padding-left: 1.5rem;
-            margin: 1rem 0;
-        }
-        
-        .product-details {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .product-card {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #2c5f8a;
-        }
-        
-        .system-requirements ul, .pricing ul, .version-info ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-        }
-        
-        .system-requirements li, .pricing li, .version-info li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #eaeaea;
-        }
-        
-        .price-tag {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #1a3a5f;
-            margin: 1rem 0;
-        }
-        
-        .feature-section {
-            margin: 2rem 0;
-        }
-        
-        .function-subject {
-            font-weight: bold;
-            color: #1a3a5f;
-            margin: 1.5rem 0 0.5rem;
-            font-size: 1.1rem;
-        }
-        
-        .function-detail {
-            margin-left: 1rem;
-            margin-bottom: 1rem;
-        }
-        
         .supported-tasks {
-            columns: 2;
-            margin: 1rem 0;
+          columns: 1;
         }
-        
-        .supported-tasks ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-        }
-        
-        .supported-tasks li {
-            padding: 0.3rem 0;
-            border-bottom: none;
-        }
-        
-        footer {
-            background: #1a3a5f;
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 2rem;
-        }
-        
-        /* Navigation Styles */
-        .main-nav {
-            background: #1a3a5f;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .nav-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-        }
-        
+
         .nav-links {
-            display: flex;
-            list-style: none;
+          flex-direction: column;
+          text-align: center;
         }
-        
-        .nav-links li {
-            padding: 0;
-        }
-        
+
         .nav-links a {
-            color: white;
-            text-decoration: none;
-            padding: 1rem 1.5rem;
-            display: block;
-            font-weight: 500;
-            transition: background 0.3s;
+          padding: 0.8rem 1rem;
         }
-        
-        .nav-links a:hover {
-            background: #2c5f8a;
-        }
-        
-        .jump-to-product {
-            text-align: center;
-            margin: 1rem 0;
-        }
-        
-        .jump-to-product a {
-            display: inline-block;
-            background: #2c5f8a;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.3s;
-        }
-        
-        .jump-to-product a:hover {
-            background: #1a3a5f;
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            section {
-                padding: 1.5rem;
-            }
-            
-            .supported-tasks {
-                columns: 1;
-            }
-            
-            .nav-links {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .nav-links a {
-                padding: 0.8rem 1rem;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1>Kasin Business Solutions Limited</h1>
-            <p class="tagline">Professional Company Secretarial Software Solutions</p>
-        </div>
+      <div class="container">
+        <h1>Kasin Business Solutions Limited</h1>
+        <p class="tagline">
+          Professional Company Secretarial Software Solutions
+        </p>
+      </div>
     </header>
-    
+
     <nav class="main-nav">
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#product">TurboSecretary</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#details">Product Details</a></li>
-            </ul>
-        </div>
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#product">TurboSecretary</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#details">Product Details</a></li>
+          <li><a href="versionlog.html">Version Log</a></li>
+        </ul>
+      </div>
     </nav>
-    
+
     <div class="container">
-        <div class="jump-to-product">
-            <a href="#product">Jump to TurboSecretary Company Secretarial Software &rarr;</a>
+      <div class="jump-to-product">
+        <a href="#product"
+          >Jump to TurboSecretary Company Secretarial Software &rarr;</a
+        >
+      </div>
+
+      <section id="contact" class="contact">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>Address</h3>
+            <p>
+              Unit C-D, 15/F., TAL Building, 49 Austin Road, Kowloon, Hong Kong
+            </p>
+          </div>
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p>sales@kasinbs.com</p>
+          </div>
         </div>
-        
-        <section id="contact" class="contact">
-            <h2>Contact Information</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>Address</h3>
-                    <p>Unit C-D, 15/F., TAL Building, 49 Austin Road, Kowloon, Hong Kong</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <p>sales@kasinbs.com</p>
-                </div>
-            </div>
-            
-            <div class="enquiry-note">
-                <h3>Enquiry Information</h3>
-                <p>Please note the following regarding enquiries:</p>
+
+        <div class="enquiry-note">
+          <h3>Enquiry Information</h3>
+          <p>Please note the following regarding enquiries:</p>
+          <ul>
+            <li>We accept enquiries by email only</li>
+            <li>
+              As we exclusively serve business clients in Hong Kong, all
+              enquiries must include:
+              <ul>
+                <li>Subject: TurboSecretary Enquiry</li>
+                <li>Your company name</li>
+                <li>Contact person's name</li>
+                <li>Business phone number</li>
+              </ul>
+            </li>
+            <li>
+              We will contact you accordingly after reviewing your enquiry
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="product" class="product">
+        <h2>TurboSecretary - Professional Company Secretarial Software</h2>
+        <p>
+          <strong>TurboSecretary</strong> is a comprehensive multi-user company
+          secretarial application and corporate compliance software, solely
+          developed by Kasin Business Solutions Limited. Our company secretarial
+          software is designed to make the life of company secretarial
+          professionals much more pleasant in an environment where time is
+          always limited; ever-changing company regulations need to be complied
+          with; and vast amounts of statutory records have to be maintained.
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          As leading corporate compliance software, TurboSecretary makes the
+          best use of database technology to capture data and transform it into
+          useful information. All user interfaces in our secretarial workflow
+          automation system are optimized to minimize users' workload and
+          prevent careless mistakes. It comes with unique task management tools
+          and powerful generators for memos, reports, minutes, organization
+          charts, statutory forms and records.
+        </p>
+      </section>
+
+      <section id="features" class="product">
+        <h2>Key Features of Our Company Secretarial Software</h2>
+
+        <p class="function-subject">
+          Comprehensive Company Secretarial Work Support
+        </p>
+        <p class="function-detail">
+          TurboSecretary supports a large number of company secretarial tasks
+          and most supported tasks come with document printing facilities. This
+          business registration software and company formation software handles
+          essential functions including:
+        </p>
+        <div class="supported-tasks">
+          <ul>
+            <li>Incorporation and company formation</li>
+            <li>Deregistration</li>
+            <li>Change of Company Name</li>
+            <li>Annual Return</li>
+            <li>
+              Appointment or Resignation of Director / Secretary / Authorized
+              Representative
+            </li>
+            <li>
+              Change of Particulars of Director, Secretary, Shareholder and
+              Authorized Representative
+            </li>
+            <li>Increase of Capital (Non-HK companies only)</li>
+            <li>Share Allotment</li>
+            <li>Share Transfer</li>
+            <li>Change of Registered Office</li>
+          </ul>
+        </div>
+
+        <p class="function-subject">Multi-Jurisdiction Compliance Support</p>
+        <p class="function-detail">
+          Most features of TurboSecretary are available to various
+          jurisdictions, making it ideal for multi-jurisdiction compliance. When
+          a feature is not applicable to companies of a particular jurisdiction,
+          it is automatically disabled in our corporate governance software.
+        </p>
+
+        <p class="function-subject">
+          Registration of Foreign Companies in Hong Kong
+        </p>
+        <p class="function-detail">
+          The registration of companies formed in an overseas jurisdiction under
+          Part 16 of the new Companies Ordinance of Hong Kong (Cap. 622) is
+          supported. Compliance support for these 'Part 16' companies is also
+          provided in our Hong Kong company secretary software solution.
+        </p>
+
+        <p class="function-subject">Dual Language Support For Documents</p>
+        <p class="function-detail">
+          Minutes and Companies Registry Forms can be printed in English or
+          Chinese, enhancing our corporate compliance software capabilities.
+        </p>
+
+        <p class="function-subject">Electronic Statutory Records Management</p>
+        <p class="function-detail">
+          Updating statutory records is not a pleasant job. It is error-prone,
+          tedious and time consuming. TurboSecretary's statutory records
+          management system handles all these chores for you by keeping track of
+          all changes of a company behind the scene as you are doing your daily
+          work. There is nothing you need to do in maintaining statutory records
+          except printing them out.
+        </p>
+
+        <p class="function-subject">Significant Controller Registers</p>
+        <p class="function-detail">
+          TurboSecretary's significant controller register wizard takes away
+          heavy workload from you in preparing and updating significant
+          controller registers, a key feature of modern corporate governance
+          software.
+        </p>
+
+        <p class="function-subject">
+          Task Explorer for Secretarial Workflow Automation
+        </p>
+        <p class="function-detail">
+          Staying on top of things is no easy task especially when you have many
+          outstanding tasks. Which task is due? Which task misses internal
+          documents and what are missing? Which task is not complete? Finding
+          answers to all these questions can take up a lot of precious time. The
+          Task Explorer is a task management tool designed to take care of all
+          these for you and free you up for revenue generation work through
+          effective secretarial workflow automation.
+        </p>
+
+        <p class="function-subject">Kit Box Inventory Control</p>
+        <p class="function-detail">
+          When a client wants to retrieve an item from their statutory kit box
+          in your custody, TurboSecretary's Kit Box Inventory Control takes this
+          trouble away from you. It keeps every detail of each kit box in hand,
+          lets you check-in or check-out items with great ease, and allows you
+          to print acknowledgement of receipt for clients to sign when they want
+          something back.
+        </p>
+      </section>
+
+      <section id="details" class="product">
+        <h2>TurboSecretary Software Details</h2>
+
+        <div class="product-details">
+          <div class="product-card system-requirements">
+            <h3>System Requirements</h3>
+            <ul>
+              <li>Operating System: Windows 10 or Windows 11</li>
+              <li>Processor: Intel Core i3 or equivalent (i5 recommended)</li>
+              <li>Memory: 4GB RAM minimum (8GB recommended)</li>
+              <li>Storage: 2GB available hard disk space</li>
+              <li>Display: 1024x768 screen resolution</li>
+              <li>A printer capable of printing 600 dpi</li>
+              <li>
+                Network Share: for multi-user access, it is required to have a
+                network share in the local area network (LAN) to which all
+                computers having TurboSecretary installed have read/write
+                access.
+              </li>
+              <li>
+                Prerequisite Programs:
                 <ul>
-                    <li>We accept enquiries by email only</li>
-                    <li>As we exclusively serve business clients in Hong Kong, all enquiries must include:
-                        <ul>
-							<li>Subject: TurboSecretary Enquiry</li>
-                            <li>Your company name</li>
-                            <li>Contact person's name</li>
-                            <li>Business phone number</li>
-                        </ul>
-                    </li>
-                    <li>We will contact you accordingly after reviewing your enquiry</li>
+                  <li>Microsoft .NET Framework 4 runtime</li>
+                  <li>Microsoft Word 2010 or above</li>
+                  <li>Microsoft Excel 2010 or above</li>
                 </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-card version-info">
+            <h3>Current Version</h3>
+            <p><strong>TurboSecretary 2.2.3.8</strong></p>
+            <p>Released: February 2, 2026</p>
+            <p>
+              <a
+                href="versionlog.html"
+                style="
+                  color: #2c5f8a;
+                  text-decoration: none;
+                  font-weight: 500;
+                  font-size: small;
+                "
+                >( View Complete Version History → )</a
+              >
+            </p>
+            <br />
+            <p>
+              Key features in this version of our company secretarial software:
+            </p>
+            <ul>
+              <li>Update IRD address in templates of letters to IRD</li>
+              <li>Add list printing function in the task explorer</li>
+              <li>
+                Update NAR1 to version: Specification No. 2/2025 (May 2025)
+              </li>
+              <li>Fix the signer name inconsistency issue in NNC1</li>
+              <li>Fix the problem arising from unicode code page</li>
+            </ul>
+          </div>
+
+          <div class="product-card pricing">
+            <h3>Pricing</h3>
+            <div class="price-tag">HK$36,000</div>
+            <p>Master license for company secretarial firms</p>
+            <ul>
+              <li>Setup of data source</li>
+              <li>
+                Installation and activation of the software onto one computer
+              </li>
+              <li>3-hour of on-site training</li>
+              <li>1 year of complimentary updates</li>
+              <li>1 year of complimentary phone support</li>
+            </ul>
+            <div class="contact-offer">
+              <a href="#contact"
+                >Contact us for other licenses, offers or questions ?</a
+              >
             </div>
-        </section>
-        
-        <section id="product" class="product">
-            <h2>TurboSecretary - Professional Company Secretarial Software</h2>
-            <p><strong>TurboSecretary</strong> is a comprehensive multi-user company secretarial application and corporate compliance software, solely developed by Kasin Business Solutions Limited. Our company secretarial software is designed to make the life of company secretarial professionals much more pleasant in an environment where time is always limited; ever-changing company regulations need to be complied with; and vast amounts of statutory records have to be maintained.</p>
-            <p>&nbsp;</p>
-            <p>As leading corporate compliance software, TurboSecretary makes the best use of database technology to capture data and transform it into useful information. All user interfaces in our secretarial workflow automation system are optimized to minimize users' workload and prevent careless mistakes. It comes with unique task management tools and powerful generators for memos, reports, minutes, organization charts, statutory forms and records.</p>
-        </section>
-        
-        <section id="features" class="product">
-            <h2>Key Features of Our Company Secretarial Software</h2>
-            
-            <p class="function-subject">Comprehensive Company Secretarial Work Support</p>
-            <p class="function-detail">
-                TurboSecretary supports a large number of company secretarial tasks and most supported tasks come with document printing facilities. This business registration software and company formation software handles essential functions including:
-            </p>
-            <div class="supported-tasks">
-                <ul>
-                    <li>Incorporation and company formation</li>
-                    <li>Deregistration</li>
-                    <li>Change of Company Name</li>
-                    <li>Annual Return</li>
-                    <li>Appointment or Resignation of Director / Secretary / Authorized Representative</li>
-                    <li>Change of Particulars of Director, Secretary, Shareholder and Authorized Representative</li>
-                    <li>Increase of Capital (Non-HK companies only)</li>
-                    <li>Share Allotment</li>
-                    <li>Share Transfer</li>
-                    <li>Change of Registered Office</li>
-                </ul>
-            </div>
-            
-            <p class="function-subject">Multi-Jurisdiction Compliance Support</p>
-            <p class="function-detail">
-                Most features of TurboSecretary are available to various jurisdictions, making it ideal for multi-jurisdiction compliance. When a feature is not applicable to companies of a particular jurisdiction, it is automatically disabled in our corporate governance software.
-            </p>
-            
-            <p class="function-subject">Registration of Foreign Companies in Hong Kong</p>
-            <p class="function-detail">
-                The registration of companies formed in an overseas jurisdiction under Part 16 of the new Companies Ordinance of Hong Kong (Cap. 622) is supported. Compliance support for these 'Part 16' companies is also provided in our Hong Kong company secretary software solution.
-            </p>
-            
-            <p class="function-subject">Dual Language Support For Documents</p>
-            <p class="function-detail">
-                Minutes and Companies Registry Forms can be printed in English or Chinese, enhancing our corporate compliance software capabilities.
-            </p>
-            
-            <p class="function-subject">Electronic Statutory Records Management</p>
-            <p class="function-detail">
-                Updating statutory records is not a pleasant job. It is error-prone, tedious and time consuming. TurboSecretary's statutory records management system handles all these chores for you by keeping track of all changes of a company behind the scene as you are doing your daily work. There is nothing you need to do in maintaining statutory records except printing them out.
-            </p>
-            
-            <p class="function-subject">Significant Controller Registers</p>
-            <p class="function-detail">
-                TurboSecretary's significant controller register wizard takes away heavy workload from you in preparing and updating significant controller registers, a key feature of modern corporate governance software.
-            </p>
-            
-            <p class="function-subject">Task Explorer for Secretarial Workflow Automation</p>
-            <p class="function-detail">
-                Staying on top of things is no easy task especially when you have many outstanding tasks. Which task is due? Which task misses internal documents and what are missing? Which task is not complete? Finding answers to all these questions can take up a lot of precious time. The Task Explorer is a task management tool designed to take care of all these for you and free you up for revenue generation work through effective secretarial workflow automation.
-            </p>
-            
-            <p class="function-subject">Kit Box Inventory Control</p>
-            <p class="function-detail">
-                When a client wants to retrieve an item from their statutory kit box in your custody, TurboSecretary's Kit Box Inventory Control takes this trouble away from you. It keeps every detail of each kit box in hand, lets you check-in or check-out items with great ease, and allows you to print acknowledgement of receipt for clients to sign when they want something back.
-            </p>
-        </section>
-        
-        <section id="details" class="product">
-            <h2>TurboSecretary Software Details</h2>
-            
-            <div class="product-details">
-                <div class="product-card system-requirements">
-                    <h3>System Requirements</h3>
-                    <ul>
-                        <li>Operating System: Windows 10 or Windows 11</li>
-                        <li>Processor: Intel Core i3 or equivalent (i5 recommended)</li>
-                        <li>Memory: 4GB RAM minimum (8GB recommended)</li>
-                        <li>Storage: 2GB available hard disk space</li>
-                        <li>Display: 1024x768 screen resolution</li>
-						<li>A printer capable of printing 600 dpi</li>
-                        <li>Network Share: for multi-user access, it is required to have a network share in the local area network (LAN) to which all computers having TurboSecretary installed have read/write access.</li>
-						<li>Prerequisite Programs:
-							<ul>
-								<li>Microsoft .NET Framework 4 runtime</li>
-								<li>Microsoft Word 2010 or above</li>
-								<li>Microsoft Excel 2010 or above</li>
-							</ul>
-						</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card version-info">
-                    <h3>Current Version</h3>
-                    <p><strong>TurboSecretary 2.2.3.7</strong></p>
-                    <p>Released: February 17, 2025</p>
-                    <p>Key features in this version of our company secretarial software:</p>
-                    <ul>
-                        <li>Accelerated the application start-up process by removing outdated checking routines</li>
-						<li>Updated relevant documents for HK companies in accordance with the UBI (Unique Business Identifier) requirement</li>
-						<li>Updated IRD Form i.r.1263 to version 12/2023</li>
-						<li>Discontinued Job Monitors and related functions</li>
-						<li>Fixed issues arising from companies having incorporation date of February 29</li>
-                    </ul>
-                </div>
-                
-                <div class="product-card pricing">
-                    <h3>Pricing</h3>
-                    <div class="price-tag">HK$36,000</div>
-                    <p>Master license for company secretarial firms</p>
-                    <ul>
-                        <li>Setup of data source</li>
-						<li>Installation and activation of the software onto one computer</li>
-						<li>3-hour of on-site training</li>
-                        <li>1 year of complimentary updates</li>
-                        <li>1 year of complimentary phone support</li>
-                    </ul>
-					<div class="contact-offer">
-						<a href="#contact">Contact us for other licenses, offers or questions ?</a>
-					</div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
-    
+
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Kasin Business Solutions Limited. All rights reserved.</p>
-            <p>TurboSecretary - Professional Company Secretarial Software for Corporate Compliance</p>
-        </div>
+      <div class="container">
+        <p>
+          &copy; 2025 Kasin Business Solutions Limited. All rights reserved.
+        </p>
+        <p>
+          TurboSecretary - Professional Company Secretarial Software for
+          Corporate Compliance
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
